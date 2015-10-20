@@ -1,102 +1,106 @@
 <!doctype html>
-<html lang="en">
+<!--suppress ALL -->
+<html lang="am">
+<head>
+    <meta charset="utf-8">
 
-    <head>
-        <meta charset="utf-8">
+    <title>unfoldingWord Open Bible Stories</title>
 
-        <title>unfoldingWord Open Bible Stories</title>
+    <meta name="description" content="an unrestricted visual mini-Bible in any language">
+    <meta name="author"
+          content="Created by Distant Shores Media (http://distantshores.org) and the Door43 world missions community (http://door43.org).">
 
-        <meta name="description" content="an unrestricted visual mini-Bible in any language">
-        <meta name="author" content="Created by Distant Shores Media (http://distantshores.org) and the Door43 world missions community (http://door43.org).">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
 
-        <meta name="apple-mobile-web-app-capable" content="yes" />
-        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="../../css/reveal.min.css">
+    <link rel="stylesheet" href="../../css/theme/default.css" id="theme">
+    <link rel="stylesheet" href="../../css/uw.css">
 
-        <link rel="stylesheet" href="../../css/reveal.min.css">
-        <link rel="stylesheet" href="../../css/theme/default.css" id="theme">
-        <link rel="stylesheet" href="../../css/uw.css" id="theme">
+    <!-- For syntax highlighting -->
+    <link rel="stylesheet" href="../../css/zenburn.css">
 
-        <!-- For syntax highlighting -->
-        <link rel="stylesheet" href="../../css/zenburn.css">
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if (window.location.search.match(/print-pdf/gi)) {
+            var link = document.createElement('link');
+            link.rel = 'stylesheet';
+            link.type = 'text../../css';
+            link.href = '../../css/print/pdf.css';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        }
+    </script>
 
-        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
-        <script>
-            if( window.location.search.match( /print-pdf/gi ) ) {
-                var link = document.createElement( 'link' );
-                link.rel = 'stylesheet';
-                link.type = 'text../../css';
-                link.href = '../../css/print/pdf.css';
-                document.getElementsByTagName( 'head' )[0].appendChild( link );
-            }
-        </script>
+    <!--[if lt IE 9]>
+    <script src="../../js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
 
-        <!--[if lt IE 9]>
-        <script src="../../js/html5shiv.js"></script>
-        <![endif]-->
-    </head>
-    <body>
-
-    <div class="meny">
-        <ul>
-            <li><a href="../01/index.html">1. ፍጥረት</a></li>
-            <li><a href="../02/index.html">2. ኃጢአት ወደ ዓለም ገባ</a></li>
-            <li><a href="../03/index.html">3. የጥፋት ውሃ</a></li>
-            <li><a href="../04/index.html">4. የእግዚአብሔር ቃል ኪዳን ከአብርሃም ጋር</a></li>
-            <li><a href="../05/index.html">5. የተስፋው ልጅ</a></li>
-            <li><a href="../06/index.html">6. እግዚአብሔር ለይስሐቅ ሚስት አዘጋጀለት</a></li>
-            <li><a href="../07/index.html">7. እግዚአብሔር ያዕቆብን ባረከ</a></li>
-            <li><a href="../08/index.html">8. እግዚአብሔር ዮሴፍንና ቤተ ሰቡን አዳነ</a></li>
-            <li><a href="../09/index.html">9. እግዚአብሔር ሙሴን ጠራው</a></li>
-            <li><a href="../10/index.html">10. ዐሥሩ መቅሠፍቶች</a></li>
-            <li><a href="../11/index.html">11. ፋሲካ</a></li>
-            <li><a href="../12/index.html">12. የእስራኤላውያን ከግብፅ መውጣት</a></li>
-            <li><a href="../13/index.html">13. እግዚአብሔር ከእስራኤል ጋር ያደረገው ቃል ኪዳን</a></li>
-            <li><a href="../14/index.html">14. በምድረ በዳ ተቅበዘበዙ</a></li>
-            <li><a href="../15/index.html">15. የተስፋዪቱ ምድር</a></li>
-            <li><a href="../16/index.html">16. ነፃ አውጪዎቹ</a></li>
-            <li><a href="../17/index.html">17. እግዚአብሔር ከዳዊት ጋር ያደረገው ቃል ኪዳን</a></li>
-            <li><a href="../18/index.html">18. የተከፈለው መንግሥት</a></li>
-            <li><a href="../19/index.html">19. ነቢያቱ</a></li>
-            <li><a href="../20/index.html">20. ምርኮና ከምርኮ መመለስ</a></li>
-            <li><a href="../21/index.html">21. እግዚአብሔር መሲሑን ተስፋ ሰጠ</a></li>
-            <li><a href="../22/index.html">22. የዮሐንስ መወለድ</a></li>
-            <li><a href="../23/index.html">23. የኢየሱስ ልደት</a></li>
-            <li><a href="../24/index.html">24. ዮሐንስ ኢየሱስን አጠመቀ</a></li>
-            <li><a href="../25/index.html">25. ሰይጣን ኢየሱስን ፈተነው</a></li>
-            <li><a href="../26/index.html">26. ኢየሱስ አገልግሎቱን ጀመረ</a></li>
-            <li><a href="../27/index.html">27.የደጉ ሳምራዊ ታሪክ</a></li>
-            <li><a href="../28/index.html">28. ባለ ጠጋው ወጣት</a></li>
-            <li><a href="../29/index.html">29. የምሕረት የለሹ ባሪያ ታሪክ</a></li>
-            <li><a href="../30/index.html">30. ኢየሱስ አምስት ሺህ ሰዎችን መገበ</a></li>
-            <li><a href="../31/index.html">31. ኢየሱስ በውሃ ላይ ተራመደ</a></li>
-            <li><a href="../32/index.html">32. ኢየሱስ ርኵስ መንፈስ የያዘውን ሰውና የታመመችውን ሴት ፈወሰ</a></li>
-            <li><a href="../33/index.html">33. የአርሶ አደሩ ታሪክ</a></li>
-            <li><a href="../34/index.html">34.ኢየሱስ ሌሎች ታሪኮችን አስተማረ</a></li>
-            <li><a href="../35/index.html">35. የርኅሩኁ አባት ታሪክ</a></li>
-            <li><a href="../36/index.html">36. የኢየሱስ መልክ ተለወጠ</a></li>
-            <li><a href="../37/index.html">37. ኢየሱስ አልዓዛርን ከሞት አስነሣ</a></li>
-            <li><a href="../38/index.html">38. ኢየሱስ ተላልፎ ተሰጠ</a></li>
-            <li><a href="../39/index.html">39. ኢየሱስ ለፍርድ ቀረበ</a></li>
-            <li><a href="../40/index.html">40. ኢየሱስ ተሰቀለ</a></li>
-            <li><a href="../41/index.html">41. እግዚአብሔር ኢየሱስን ከሙታን አስነሣው</a></li>
-            <li><a href="../42/index.html">42. ኢየሱስ ወደ ሰማይ ተመለሰ</a></li>
-            <li><a href="../43/index.html">43. ቤተ ክርስቲያን ተጀመረች</a></li>
-            <li><a href="../44/index.html">44. ጴጥሮስና ዮሐንስ ይለምን የነበረውን ሰው ፈወሱ</a></li>
-            <li><a href="../45/index.html">45. ፊልጶስና ኢትዮጵያዊው ባለ ሥልጣን</a></li>
-            <li><a href="../46/index.html">46. ጳውሎስ ክርስቲያን ሆነ</a></li>
-            <li><a href="../47/index.html">47. ጳውሎስና ሲላስ በፊልጵስዩስ</a></li>
-            <li><a href="../48/index.html">48. ኢየሱስ ተስፋ የተሰጠው መሲሕ ነው</a></li>
-            <li><a href="../49/index.html">49. ዐዲሱ የእግዚአብሔር ቃል ኪዳን</a></li>
-            <li><a href="../50/index.html">50. ኢየሱስ ይመለሳል</a></li>
-        </ul>
-        <p><a href="https://unfoldingword.org/stories/">Open Bible Stories Home</a></p>
-    </div>
-    <div class="meny-arrow"></div>
-    <div class="reveal">
-        <div class="slides">
-            <section><h1>49. ዐዲሱ የእግዚአብሔር ቃል ኪዳን</h1><h3>**የመጽሐፍ ቅዱስ ታሪክ፡- ከሮሜ 3፡21-26፤ 5፡1-11፤ ዮሐንስ 3፡16፤ ማርቆስ 16፡16፤ ቈላስይስ 1፡13-14፤ 2ኛ ቆሮንቶስ 5፡17-21፤ 1ኛ ዮሐንስ 1፡5-10።**</h3><div class="uwchecking"><a href="https://unfoldingword.org/quality/" target="_blank"><img src="https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level3-64px.png" /></a></section>
+<div class="meny">
+    <ul>
+        <li><a href="../01/index.html">1. ፍጥረት</a></li>
+        <li><a href="../02/index.html">2. ኃጢአት ወደ ዓለም ገባ</a></li>
+        <li><a href="../03/index.html">3. የጥፋት ውሃ</a></li>
+        <li><a href="../04/index.html">4. የእግዚአብሔር ቃል ኪዳን ከአብርሃም ጋር</a></li>
+        <li><a href="../05/index.html">5. የተስፋው ልጅ</a></li>
+        <li><a href="../06/index.html">6. እግዚአብሔር ለይስሐቅ ሚስት አዘጋጀለት</a></li>
+        <li><a href="../07/index.html">7. እግዚአብሔር ያዕቆብን ባረከ</a></li>
+        <li><a href="../08/index.html">8. እግዚአብሔር ዮሴፍንና ቤተ ሰቡን አዳነ</a></li>
+        <li><a href="../09/index.html">9. እግዚአብሔር ሙሴን ጠራው</a></li>
+        <li><a href="../10/index.html">10. ዐሥሩ መቅሠፍቶች</a></li>
+        <li><a href="../11/index.html">11. ፋሲካ</a></li>
+        <li><a href="../12/index.html">12. የእስራኤላውያን ከግብፅ መውጣት</a></li>
+        <li><a href="../13/index.html">13. እግዚአብሔር ከእስራኤል ጋር ያደረገው ቃል ኪዳን</a></li>
+        <li><a href="../14/index.html">14. በምድረ በዳ ተቅበዘበዙ</a></li>
+        <li><a href="../15/index.html">15. የተስፋዪቱ ምድር</a></li>
+        <li><a href="../16/index.html">16. ነፃ አውጪዎቹ</a></li>
+        <li><a href="../17/index.html">17. እግዚአብሔር ከዳዊት ጋር ያደረገው ቃል ኪዳን</a></li>
+        <li><a href="../18/index.html">18. የተከፈለው መንግሥት</a></li>
+        <li><a href="../19/index.html">19. ነቢያቱ</a></li>
+        <li><a href="../20/index.html">20. ምርኮና ከምርኮ መመለስ</a></li>
+        <li><a href="../21/index.html">21. እግዚአብሔር መሲሑን ተስፋ ሰጠ</a></li>
+        <li><a href="../22/index.html">22. የዮሐንስ መወለድ</a></li>
+        <li><a href="../23/index.html">23. የኢየሱስ ልደት</a></li>
+        <li><a href="../24/index.html">24. ዮሐንስ ኢየሱስን አጠመቀ</a></li>
+        <li><a href="../25/index.html">25. ሰይጣን ኢየሱስን ፈተነው</a></li>
+        <li><a href="../26/index.html">26. ኢየሱስ አገልግሎቱን ጀመረ</a></li>
+        <li><a href="../27/index.html">27.የደጉ ሳምራዊ ታሪክ</a></li>
+        <li><a href="../28/index.html">28. ባለ ጠጋው ወጣት</a></li>
+        <li><a href="../29/index.html">29. የምሕረት የለሹ ባሪያ ታሪክ</a></li>
+        <li><a href="../30/index.html">30. ኢየሱስ አምስት ሺህ ሰዎችን መገበ</a></li>
+        <li><a href="../31/index.html">31. ኢየሱስ በውሃ ላይ ተራመደ</a></li>
+        <li><a href="../32/index.html">32. ኢየሱስ ርኵስ መንፈስ የያዘውን ሰውና የታመመችውን ሴት ፈወሰ</a></li>
+        <li><a href="../33/index.html">33. የአርሶ አደሩ ታሪክ</a></li>
+        <li><a href="../34/index.html">34.ኢየሱስ ሌሎች ታሪኮችን አስተማረ</a></li>
+        <li><a href="../35/index.html">35. የርኅሩኁ አባት ታሪክ</a></li>
+        <li><a href="../36/index.html">36. የኢየሱስ መልክ ተለወጠ</a></li>
+        <li><a href="../37/index.html">37. ኢየሱስ አልዓዛርን ከሞት አስነሣ</a></li>
+        <li><a href="../38/index.html">38. ኢየሱስ ተላልፎ ተሰጠ</a></li>
+        <li><a href="../39/index.html">39. ኢየሱስ ለፍርድ ቀረበ</a></li>
+        <li><a href="../40/index.html">40. ኢየሱስ ተሰቀለ</a></li>
+        <li><a href="../41/index.html">41. እግዚአብሔር ኢየሱስን ከሙታን አስነሣው</a></li>
+        <li><a href="../42/index.html">42. ኢየሱስ ወደ ሰማይ ተመለሰ</a></li>
+        <li><a href="../43/index.html">43. ቤተ ክርስቲያን ተጀመረች</a></li>
+        <li><a href="../44/index.html">44. ጴጥሮስና ዮሐንስ ይለምን የነበረውን ሰው ፈወሱ</a></li>
+        <li><a href="../45/index.html">45. ፊልጶስና ኢትዮጵያዊው ባለ ሥልጣን</a></li>
+        <li><a href="../46/index.html">46. ጳውሎስ ክርስቲያን ሆነ</a></li>
+        <li><a href="../47/index.html">47. ጳውሎስና ሲላስ በፊልጵስዩስ</a></li>
+        <li><a href="../48/index.html">48. ኢየሱስ ተስፋ የተሰጠው መሲሕ ነው</a></li>
+        <li><a href="../49/index.html">49. ዐዲሱ የእግዚአብሔር ቃል ኪዳን</a></li>
+        <li><a href="../50/index.html">50. ኢየሱስ ይመለሳል</a></li>
+    </ul>
+    <p><a href="https://unfoldingword.org/stories/">Open Bible Stories Home</a></p>
+</div>
+<div class="meny-arrow"></div>
+<div class="reveal">
+    <div class="slides"><section><h1>49. ዐዲሱ የእግዚአብሔር ቃል ኪዳን</h1><h3>**የመጽሐፍ ቅዱስ ታሪክ፡- ከሮሜ 3፡21-26፤ 5፡1-11፤ ዮሐንስ 3፡16፤ ማርቆስ 16፡16፤ ቈላስይስ 1፡13-14፤ 2ኛ ቆሮንቶስ 5፡17-21፤ 1ኛ ዮሐንስ 1፡5-10።**</h3><div class="uwchecking">
+    <a href="https://unfoldingword.org/quality/" target="_blank">
+        <img src="https://api.unfoldingword.org/obs/jpg/1/checkinglevels/uW-Level3-64px.png" />
+    </a>
+</section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-01.jpg"><p>አንድ መልአክ ማርያም ለተባለች ድንግል የእግዚአብሔርን ልጅ እንደምትወልድ ነገራት። ስለዚህ እርስዋ ገና ድንግል እያለች ወንድ ልጅ ወለደችና ኢየሱስ ብላ ሰየመችው። ስለዚህ ኢየሱስ አምላክም ሰውም ነው።</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-02.jpg"><p>ኢየሱስ አምላክ መሆኑን የሚያረጋግጡ ብዙ ተአምራትን አደረገ። በውሃ ላይ ተራመደ፣ ማዕበልን ጸጥ አደረገ፣ ብዙ በሽተኞችን ፈወሰ፣ አጋንንትን አወጣ፣ ሙታንን አስነሣ፣ እንዲሁም አምስት እንጀራና ሁለት ትንንሽ ዓሣ ከ5,000 ለበለጡ ሰዎች እንዲበቃ አደረገ።</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-03.jpg"><p>ደግሞም ኢየሱስ ታላቅ መምህር ነው፣ የእግዚአብሔር ልጅ ስለሆነም በሥልጣን ተናገረ። ራሳችሁን እንደምትወዱ ሌሎችን ሰዎችንም ውደዱ ብሎ አስተማረ።</p></section>
@@ -115,87 +119,110 @@
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-16.jpg"><p>እናንተ ክርስቲያኖች ናችሁ፣ ኢየሱስ በሠራው ሥራ ምክንያት እግዚአብሔር ኃጢአታችሁን ይቅር ብሎአችኋል። አሁን እግዚአብሔር በጠላቶች ፈንታ የቅርብ ወዳጆች አድርጎ ይቈጥራችኋል።</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-17.jpg"><p>የእግዚአብሔር ወዳጆችና የጌታ ኢየሱስ አገልጋዮች ከሆናችሁ፣ ኢየሱስ ለሚያስተምራችሁ ነገር ትታዘዛላችሁ። ክርስቲያኖች ብትሆኑም እንኳ፣ አሁንም ኃጢአት ለመሥራት ትፈተናላችሁ። ነገር ግን እግዚአብሔር የታመነ ነውና ኃጢአታችሁን ብትናዘዙ ይቅር እላችኋለሁ ይላል። ኃጢአትን የምትቃወሙበትን ብርታት ይሰጣችኋል።</p></section>
 <section data-background="https://api.unfoldingword.org/obs/jpg/1/am/360px/obs-am-49-18.jpg"><p>እግዚአብሔር እንድትጸልዩ፣ ቃሉን እንድታጠኑ፣ ከሌሎች ክርስቲያኖች ጋር እንድታመልኩ፣ ያደረገላችሁንም ለሌሎች እንድትነግሩ ይጠይቃችኋል። እነዚህ ነገሮች ሁሉ ከእርሱ ጋር የጠለቀ ግንኙነት እንዲኖራችሁ ይረዱአችኋል።</p></section>
-<section><a href="../50/index.html"><p>የሚቀጥለው ምዕራፍ</p></a></section>
-            </div>
-        </div>
+<section><a href="../50/index.html"><p>የሚቀጥለው ምዕራፍ</p></a></section></div>
+</div>
 
-        <script src="../../js/head.min.js"></script>
-        <script src="../../js/reveal.min.js"></script>
-        <script src="../../js/meny.js"></script>
-        <script>
-            // Create an instance of Meny
-            var meny = Meny.create({
-                // The element that will be animated in from off screen
-                menuElement: document.querySelector( '.meny' ),
+<script src="../../js/head.min.js"></script>
+<script src="../../js/reveal.min.js"></script>
+<script src="../../js/meny.js"></script>
+<script>
+    // Create an instance of Meny
+    var meny = Meny.create({
+        // The element that will be animated in from off screen
+        menuElement: document.querySelector('.meny'),
 
-                // The contents that gets pushed aside while Meny is active
-                contentsElement: document.querySelector( '.reveal' ),
+        // The contents that gets pushed aside while Meny is active
+        contentsElement: document.querySelector('.reveal'),
 
-                // [optional] The alignment of the menu (top/right/bottom/left)
-                position: Meny.getQuery().p || 'left',
+        // [optional] The alignment of the menu (top/right/bottom/left)
+        position: Meny.getQuery().p || 'left',
 
-                // [optional] The height of the menu (when using top/bottom position)
-                height: 200,
+        // [optional] The height of the menu (when using top/bottom position)
+        height: 200,
 
-                // [optional] The width of the menu (when using left/right position)
-                width: 300,
+        // [optional] The width of the menu (when using left/right position)
+        width: 300,
 
-                // [optional] Distance from mouse (in pixels) when menu should open
-                threshold: 40,
+        // [optional] Distance from mouse (in pixels) when menu should open
+        threshold: 40,
 
-                // [optional] Use mouse movement to automatically open/close
-                mouse: true,
+        // [optional] Use mouse movement to automatically open/close
+        mouse: true,
 
-                // [optional] Use touch swipe events to open/close
-                touch: true
-            });
+        // [optional] Use touch swipe events to open/close
+        touch: true
+    });
 
-            // API Methods:
-            // meny.open();
-            // meny.close();
-            // meny.isOpen();
+    // API Methods:
+    // meny.open();
+    // meny.close();
+    // meny.isOpen();
 
-            // Events:
-            // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
-            // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
-        </script>
+    // Events:
+    // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+    // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+</script>
 
-        <script>
+<script>
 
-            var flyOutNotes;
+    var flyOutNotes;
 
-            // Full list of configuration options available here:
-            // https://github.com/hakimel/reveal.js#configuration
-            Reveal.initialize({
-                controls: true,
-                progress: true,
-                history: true,
-                center: false,
-                width: '100%',
-                height: '100%',
-                margin: 0,
+    // Full list of configuration options available here:
+    // https://github.com/hakimel/reveal.js#configuration
+    Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: false,
+        width: '100%',
+        height: '100%',
+        margin: 0,
 
-                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-                transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
+        theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+        transition: Reveal.getQueryHash().transition || 'fade', // default/cube/page/concave/zoom/linear/fade/none
 
-                // Parallax scrolling
-                // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
-                // parallaxBackgroundSize: '2100px 900px',
+        // Parallax scrolling
+        // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+        // parallaxBackgroundSize: '2100px 900px',
 
-                // Optional libraries used to extend on reveal.js
-                dependencies: [
-                    { src: '../../js/classList.js', condition: function() { return !document.body.classList; } },
-                    { src: '../../js/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../js/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-                    { src: '../../js/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-                    { src: '../../js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-                    { src: '../../js/obs-notes.js', async: true, callback: function() {
-                        flyOutNotes = new FlyOutNotes();
-                        window.addEventListener('hashchange', function() { flyOutNotes.loadNotes() });
-                    } }
-                ]
-            });
-        </script>
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+            {
+                src: '../../js/classList.js', condition: function () {
+                return !document.body.classList;
+            }
+            },
+            {
+                src: '../../js/marked.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../js/markdown.js', condition: function () {
+                return !!document.querySelector('[data-markdown]');
+            }
+            },
+            {
+                src: '../../js/highlight.js', async: true, callback: function () {
+                hljs.initHighlightingOnLoad();
+            }
+            },
+            {
+                src: '../../js/zoom.js', async: true, condition: function () {
+                return !!document.body.classList;
+            }
+            },
+            {
+                src: '../../js/obs-notes.js', async: true, callback: function () {
+                flyOutNotes = new FlyOutNotes();
+                window.addEventListener('hashchange', function () {
+                    flyOutNotes.loadNotes()
+                });
+            }
+            }
+        ]
+    });
+</script>
 
-    </body>
+</body>
 </html>
